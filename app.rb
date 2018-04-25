@@ -38,8 +38,8 @@ class App < Sinatra::Base
     # "#{@total}"
     @operator = params[:operation]
     if @operator == "add"
-      @sign = +
-      @sign
+      sign = +
+      sign
     end
   end
 
