@@ -37,7 +37,9 @@ class App < Sinatra::Base
     # @total = params[:number1].to_i @operator params[:number2].to_i
     # "#{@total}"
     @operator = params[:operation]
-    @operator
+    if @operator == "add"
+      "You are adding"
+    end
   end
 
 end
