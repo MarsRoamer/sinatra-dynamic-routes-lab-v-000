@@ -39,7 +39,7 @@ class App < Sinatra::Base
     @operator = params[:operation]
     if @operator == "add"
       @sign = +
-      3 @sign 4
+      "3 @sign 4"
     end
   end
 
