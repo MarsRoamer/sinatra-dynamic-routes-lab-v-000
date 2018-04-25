@@ -40,8 +40,8 @@ class App < Sinatra::Base
     @num1 = params[:number1].to_i
     @num2 = params[:number2].to_i
     if @operator == "add"
-      
-      "#{@num1}"
+      @total = @num1 + @num2
+      "#{@total}"
     end
   end
 
