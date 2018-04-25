@@ -24,7 +24,16 @@ class App < Sinatra::Base
   end
 
   get "/:operation/:number1/:number2" do
-    @total = params[:number1].to_i params[:operation] params[:number2].to_i 
+    if params[:operation] == "add"
+      @operator = +
+    elsif params[:operation] == "subract"
+      @operator = -
+    elsif params[:operation] == "divide"
+      @operator = /
+    elsif params[:operation] == "multiply"
+      @operator = *
+    end
+    @total = params[:number1].to_i @operator params[:number2].to_i
     "#{@total}"
   end
 
