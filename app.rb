@@ -36,6 +36,7 @@ class App < Sinatra::Base
     # "#{@operator}"
     # @total = params[:number1].to_i @operator params[:number2].to_i
     # "#{@total}"
+    "#{params[:operation]}"
   end
 
 end
